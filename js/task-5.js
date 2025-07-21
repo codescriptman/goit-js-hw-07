@@ -3,3 +3,15 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+const changeColor = document.querySelector(".change-color");
+const color = document.querySelector(".color");
+const body = document.querySelector("body");
+
+changeColor.addEventListener("click", handle);
+
+function handle(event) {
+  const colorId = getRandomHexColor();
+  body.style.backgroundColor = colorId;
+  color.textContent = colorId;
+}
+// color =  #1536cf
