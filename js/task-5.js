@@ -14,4 +14,4 @@ function handle(event) {
   body.style.backgroundColor = colorId;
   color.textContent = colorId;
 }
-// color =  #1536cf
+// color =  #385a71
